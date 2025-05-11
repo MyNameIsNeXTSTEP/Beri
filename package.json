@@ -1,0 +1,29 @@
+{
+  "name": "beri",
+  "version": "0.1.0",
+  "description": "Pure and Object-Oriented JavaScript Web Framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MyNameIsNeXTSTEP/Beri.git"
+  },
+  "keywords": [
+    "oop",
+    "web",
+    "framework",
+    "javascript",
+    "pure",
+    "object",
+    "eo",
+    "elegant-objects"
+  ],
+  "author": "Gadzhiev Islam",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MyNameIsNeXTSTEP/Beri/issues"
+  },
+  "homepage": "https://github.com/MyNameIsNeXTSTEP/Beri#readme"
+}
