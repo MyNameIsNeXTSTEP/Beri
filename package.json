@@ -4,7 +4,17 @@
   "description": "Pure and Object-Oriented JavaScript Web Framework",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "start": "node src/app.js",
+    "schemas-typegen": "npx tsx ./shared/api/schemas-typegen.cts",
+    "lint": "eslint",
+    "lint:all": "eslint \"**/*.js\" --quiet",
+    "lint:fix": "yarn lint --fix"
+  },
+  "type": "module",
+  "types": "./global.d.ts",
+  "engines": {
+    "node": "20 || 21 || 22"
   },
   "repository": {
     "type": "git",
@@ -25,5 +35,15 @@
   "bugs": {
     "url": "https://github.com/MyNameIsNeXTSTEP/Beri/issues"
   },
-  "homepage": "https://github.com/MyNameIsNeXTSTEP/Beri#readme"
+  "homepage": "https://github.com/MyNameIsNeXTSTEP/Beri#readme",
+  "devDependencies": {
+    "@stylistic/eslint-plugin-js": "^4.2.0",
+    "@types/node": "^22.15.17",
+    "eslint": "^9.26.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-promise": "^7.2.1",
+    "tsc": "^2.0.4",
+    "typescript": "^5.8.3"
+  },
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }
