@@ -230,3 +230,27 @@ const app = new App(
 You can use a `Beri` application only as a web-server, if you wish, meaning be able to use its HTTP or WS API as an external API endpoints. Or when you need to create a backend only with no UI for some 3rd-party clients.
 
 ...
+
+### OOP
+The main objective is to use it like a **constructor of composable objects**, that means whenever we'd like to add new functionality, a feature, an action or something - we use existing and create new **objects**.
+
+When we need to establish a new type of behavior - we create a **decorator** object, which should take any inner sub-objects to **construct** a working block.
+
+> See more at my blogpost - http://gadzhievislam.org/Programming/Decorators%20and%20composition/
+
+An example of that maybe this illustration of a _Client's agreement registration_:
+```JavaScript
+new Registration(
+    new ClientAgreement(
+        new CompanySignedAgreement(
+            new PatternDraftedFile(
+                new File('UserAgreementData.xml')
+            ).draft()
+            .toPDF()
+        ).validate()
+    ).sign()
+).proceed()
+```
+This example shows what is the principle of **composing objects** into one block of behavior pattern - we can see from the code sample, that a _Registration process_ has been declared in a **declarative way** <u>where all that belongs to it is right in front of our eyes</u>.
+
+And we can dive deep into it just by exploring each object, nothing is hidden from us as deevlopers.
